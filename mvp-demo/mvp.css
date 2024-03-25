@@ -1,47 +1,44 @@
+@charset "UTF-8";
 /*Formatierung für den body
 Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
-* {
-    /*
-        margin: 0;
-        padding: 0;
-    */
+:root {
+  --color-bg: #1A2330;
+  --color-bg-secondary: #303A44;
+  --color-light-text: #ffffff;
+  --color-accent: #BCEC33;
+  --color-inactive: #808881;
 }
 
 body {
-    background-color: lightgrey;
-    height: 100vh;
-
-}
-
-header {
-    background: #000000 url(bilder/dresden.jpg) no-repeat left top;
-}
-
-aside {
-    background: yellowgreen;
-}
-
-nav {
-    background: SkyBlue;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-bg);
+  margin: 0;
 }
 
 main {
-    background: LightYellow;
+  background: LightYellow;
 }
 
-footer {
-    background: Wheat;
-    text-align: center
+nav {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  border-radius: 15px;
+  bottom: 0;
+  width: 94%;
+  height: 56px;
+  height: 7vh;
+  margin: 3%;
+  background: var(--color-bg-secondary);
 }
-
-
-header, main, nav, aside, footer {
-    margin: 0.25em;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 0.5em;
+nav .nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-
+nav .nav-button svg {
+  width: 40%;
+  fill: var(--color-inactive);
+}/*# sourceMappingURL=mvp.css.map */

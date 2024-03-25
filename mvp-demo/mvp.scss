@@ -1,0 +1,45 @@
+/*Formatierung für den body
+Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
+
+:root {
+    --color-bg: #1A2330;
+    --color-bg-secondary: #303A44;
+    --color-light-text: #ffffff;
+    --color-accent: #BCEC33;
+    --color-inactive: #808881;
+}
+
+body {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-bg);
+    margin: 0;
+}
+
+main {
+    background: LightYellow;
+}
+
+nav {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-radius: 15px;
+    bottom: 0;
+    width: 94%;
+    height: 56px;
+    height: 7vh;
+    margin: 3%;
+    background: var(--color-bg-secondary);
+    .nav-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            width: 40%;
+            fill: var(--color-inactive);
+        }
+    }
+
+}
