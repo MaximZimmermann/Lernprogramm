@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /*Formatierung für den body
 Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
+@font-face {
+  font-family: Inter;
+  src: url(/fonts/Inter-SemiBold.ttf);
+}
 :root {
   --color-bg: #1A2330;
   --color-bg-secondary: #303A44;
@@ -9,32 +13,87 @@ Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
   --color-inactive: #808588;
   --color-hover: #ccd7dd;
   --color-box: rgb(255, 255, 255)2d;
+  --nav-height: 7vh;
+  --dividing-distance: 20px;
+  --dividing-distance-small: 10px;
+  --border-raduis: 15px;
+  --content-width: 94%;
 }
 
 body {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   background-color: var(--color-bg);
   margin: 0;
 }
 
+.logo-bar {
+  --logo-size: 3vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-height: 500px) {
+  .logo-bar {
+    display: none;
+  }
+}
+.logo-bar .logo-area {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px;
+}
+.logo-bar .logo-area .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-bar .logo-area .logo img {
+  width: var(--logo-size);
+}
+.logo-bar .logo-area .name {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light-text);
+  font-family: "Inter";
+  font-size: var(--logo-size);
+}
+
 main {
+  position: fixed;
+  top: calc(var(--nav-height));
+  bottom: calc(var(--nav-height) + var(--dividing-distance) * 2);
+  width: var(--content-width);
+  border-radius: var(--border-raduis);
   background: LightYellow;
+}
+main .content {
+  padding: var(--dividing-distance-small);
 }
 
 nav {
   position: fixed;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  border-radius: 15px;
+  border-radius: var(--border-raduis);
   bottom: 0;
-  width: 94%;
-  height: 7vh;
+  width: var(--content-width);
+  height: var(--nav-height);
   min-height: 45px;
   margin-left: 3%;
   margin-right: 3%;
-  margin-bottom: 15px;
+  margin-bottom: var(--dividing-distance);
   background: var(--color-bg-secondary);
 }
 nav .nav-button {
