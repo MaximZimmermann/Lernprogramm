@@ -6,7 +6,9 @@ Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
   --color-bg-secondary: #303A44;
   --color-light-text: #ffffff;
   --color-accent: #BCEC33;
-  --color-inactive: #808881;
+  --color-inactive: #808588;
+  --color-hover: #ccd7dd;
+  --color-box: rgb(255, 255, 255)2d;
 }
 
 body {
@@ -28,9 +30,11 @@ nav {
   border-radius: 15px;
   bottom: 0;
   width: 94%;
-  height: 56px;
   height: 7vh;
-  margin: 3%;
+  min-height: 45px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 15px;
   background: var(--color-bg-secondary);
 }
 nav .nav-button {
@@ -39,6 +43,16 @@ nav .nav-button {
   align-items: center;
 }
 nav .nav-button svg {
+  transition: fill 0.2s ease-out;
   width: 40%;
   fill: var(--color-inactive);
+}
+nav .nav-button:hover {
+  background: var(--color-box);
+}
+nav .nav-button:hover svg {
+  fill: var(--color-hover);
+}
+nav .active svg {
+  fill: var(--color-accent);
 }/*# sourceMappingURL=mvp.css.map */
