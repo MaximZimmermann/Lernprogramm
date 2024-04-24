@@ -5,6 +5,7 @@ Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
     font-family: Inter;
     src: url(/fonts/Inter-SemiBold.ttf);
 }
+
 :root {
     --color-bg: #1A2330;
     --color-bg-secondary: #303A44;
@@ -35,6 +36,7 @@ body {
     @media (max-height: 500px) {
         display: none;
     }
+
     --logo-size: 3vh;
     position: fixed;
     top: 0;
@@ -43,18 +45,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     .logo-area {
         display: grid;
         grid-template-columns: auto auto;
         gap: 2px;
+
         .logo {
             display: flex;
             justify-content: center;
             align-items: center;
+
             img {
                 width: var(--logo-size);
             }
         }
+
         .name {
             width: max-content;
             display: flex;
@@ -73,7 +79,8 @@ main {
     bottom: calc(var(--nav-height) + var(--dividing-distance) * 2);
     width: var(--content-width);
     border-radius: var(--border-raduis);
-    background: LightYellow;
+    // background: LightYellow;
+
     .content {
         padding: var(--dividing-distance-small);
     }
@@ -105,11 +112,13 @@ nav {
         }
     }
 
-    .nav-button:hover {
-        background: var(--color-box);
+    @media (hover) {
+        .nav-button:hover {
+            background: var(--color-box);
 
-        svg {
-            fill: var(--color-hover);
+            svg {
+                fill: var(--color-hover);
+            }
         }
     }
 

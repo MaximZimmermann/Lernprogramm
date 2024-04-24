@@ -76,7 +76,6 @@ main {
   bottom: calc(var(--nav-height) + var(--dividing-distance) * 2);
   width: var(--content-width);
   border-radius: var(--border-raduis);
-  background: LightYellow;
 }
 main .content {
   padding: var(--dividing-distance-small);
@@ -106,11 +105,13 @@ nav .nav-button svg {
   width: 40%;
   fill: var(--color-inactive);
 }
-nav .nav-button:hover {
-  background: var(--color-box);
-}
-nav .nav-button:hover svg {
-  fill: var(--color-hover);
+@media (hover) {
+  nav .nav-button:hover {
+    background: var(--color-box);
+  }
+  nav .nav-button:hover svg {
+    fill: var(--color-hover);
+  }
 }
 nav .active svg {
   fill: var(--color-accent);

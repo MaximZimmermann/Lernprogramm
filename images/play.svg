@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Play arrow">
+    <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="Play-arrow" fill="none" stroke="none" />
+    <path d="M4 3.48064L4 18.7985C4 19.9666 5.28635 20.6763 6.27698 20.0405L18.3125 12.3816C19.2292 11.8049 19.2292 10.4742 18.3125 9.8828L6.27698 2.23865C5.28635 1.60287 4 2.31257 4 3.48064L4 3.48064Z" id="Shape" fill="#FFFFFF" stroke="none" clip-path="url(#clip_1)" />
+  </g>
+</svg>
