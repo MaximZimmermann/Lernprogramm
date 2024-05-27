@@ -1,0 +1,102 @@
+[
+    {
+        "text": "In baseball, what is the term for a hit that allows the batter to touch all four bases?",
+        "answers": [
+            "Home run",
+            "Triple",
+            "Double",
+            "Grand slam"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which player holds the record for the most goals scored in the FIFA World Cup?",
+        "answers": [
+            "Pele",
+            "Diego Maradona",
+            "Miroslav Klose",
+            "Cristiano Ronaldo"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "What year did the first modern Olympic Games take place?",
+        "answers": [
+            "1900",
+            "1896",
+            "1912",
+            "1892"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "In basketball, how many players are there on a team on the court at a time?",
+        "answers": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which country has won the most Cricket World Cups?",
+        "answers": [
+            "India",
+            "Australia",
+            "England",
+            "West Indies"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "What is the term used in American football when the defense catches a pass intended for the offense?",
+        "answers": [
+            "Sack",
+            "Interception",
+            "Fumble",
+            "Safety"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Who is considered the greatest male tennis player of all time, having won 20 Grand Slam singles titles?",
+        "answers": [
+            "Rafael Nadal",
+            "Novak Djokovic",
+            "Roger Federer",
+            "Andy Murray"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "In which year did the first Super Bowl take place?",
+        "answers": [
+            "1967",
+            "1965",
+            "1970",
+            "1969"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What is the main object used in the game of badminton?",
+        "answers": [
+            "Birdie",
+            "Shuttlecock",
+            "Racket",
+            "Net"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which athlete holds the record for the fastest 100m sprint time?",
+        "answers": [
+            "Usain Bolt",
+            "Carl Lewis",
+            "Yohan Blake",
+            "Asafa Powell"
+        ],
+        "correctAnswer": 0
+    }
+]

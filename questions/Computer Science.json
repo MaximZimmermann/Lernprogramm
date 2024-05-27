@@ -1,0 +1,102 @@
+[
+    {
+        "text": "Which of the following programming languages is known for its use in data science?",
+        "answers": [
+            "Java",
+            "Python",
+            "C++",
+            "Swift"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which data structure uses a First-In-First-Out (FIFO) approach?",
+        "answers": [
+            "Stack",
+            "Queue",
+            "Tree",
+            "Graph"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "What is the time complexity of the quicksort algorithm in the worst-case scenario?",
+        "answers": [
+            "O(n^2)",
+            "O(n log n)",
+            "O(log n)",
+            "O(n)"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which programming language is commonly used for web development?",
+        "answers": [
+            "Rust",
+            "Go",
+            "JavaScript",
+            "Kotlin"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which data structure represents a hierarchical organization?",
+        "answers": [
+            "Array",
+            "Linked List",
+            "Tree",
+            "Hash Table"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which algorithm is used for finding the shortest path in a weighted graph?",
+        "answers": [
+            "Dijkstra's Algorithm",
+            "Merge Sort",
+            "Depth-First Search",
+            "Bubble Sort"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of the following programming languages is statically typed?",
+        "answers": [
+            "JavaScript",
+            "Python",
+            "Java",
+            "Ruby"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which data structure allows constant-time complexity for adding, removing, and accessing elements?",
+        "answers": [
+            "Stack",
+            "Queue",
+            "Hash Table",
+            "Tree"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "What is the time complexity of the merge sort algorithm?",
+        "answers": [
+            "O(n^2)",
+            "O(n log n)",
+            "O(log n)",
+            "O(n)"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which of the following programming languages is commonly used for building Android applications?",
+        "answers": [
+            "JavaScript",
+            "Swift",
+            "Java",
+            "Python"
+        ],
+        "correctAnswer": 2
+    }
+]

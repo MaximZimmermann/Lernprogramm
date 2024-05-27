@@ -3,7 +3,8 @@ Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
 // @import url(/fonts/Inter-SemiBold.ttf);
 @font-face {
     font-family: Inter;
-    src: url(/fonts/Inter-SemiBold.ttf);
+    // src: url(/fonts/Inter-SemiBold.ttf);
+    src: url(../fonts/Inter-VariableFont_slnt,wght.ttf);
 }
 
 :root {
@@ -13,11 +14,20 @@ Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
     --color-accent: #BCEC33;
     --color-inactive: #808588;
     --color-hover: #ccd7dd;
-    --color-box: rgb(255, 255, 255)2d;
+    --color-hover-nav: #37424e;
+    --color-box: #ffffff;
+    --color-correct: #6ebb0c;
+    --color-correct-light: #ebffd0;
+    --color-incorrect: #eb4034;
+    --color-incorrect-light: #ffdfdf;
+    --color-selected: #858f9e;
+    --color-selected-light: #ecedf1;
+    --gradient-bg: linear-gradient(162deg, #2E3E32 0% 0%, #5B7C6C 100% 100%);
     --nav-height: 7vh;
     --dividing-distance: 20px;
     --dividing-distance-small: 10px;
     --border-raduis: 15px;
+    --border-raduis-big: 30px;
     --content-width: 94%;
 }
 
@@ -69,6 +79,7 @@ body {
             color: var(--color-light-text);
             font-family: "Inter";
             font-size: var(--logo-size);
+            font-weight: 600;
         }
     }
 }
@@ -78,12 +89,10 @@ main {
     top: calc(var(--nav-height));
     bottom: calc(var(--nav-height) + var(--dividing-distance) * 2);
     width: var(--content-width);
+    max-width: var(--content-width);
+    overflow: hidden;
     border-radius: var(--border-raduis);
     // background: LightYellow;
-
-    .content {
-        padding: var(--dividing-distance-small);
-    }
 }
 
 nav {
@@ -98,6 +107,7 @@ nav {
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: var(--dividing-distance);
+    overflow: hidden;
     background: var(--color-bg-secondary);
 
     .nav-button {
@@ -112,13 +122,12 @@ nav {
         }
     }
 
-    @media (hover) {
-        .nav-button:hover {
-            background: var(--color-box);
+    .nav-button:hover {
+        background: var(--color-hover-nav);
+        transition: background 0.2s ease-out;
 
-            svg {
-                fill: var(--color-hover);
-            }
+        svg {
+            fill: var(--color-hover);
         }
     }
 

@@ -1,0 +1,52 @@
+[
+    {
+        "text": "Which continent has the largest land area?",
+        "answers": ["Africa", "Asia", "Europe", "South America"],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which of the following countries is part of the European Union?",
+        "answers": ["Norway", "Switzerland", "Iceland", "Germany"],
+        "correctAnswer": 3
+    },
+    {
+        "text": "The Great Wall of China is located in which country?",
+        "answers": ["Japan", "India", "China", "Russia"],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which continent is known as the 'Dark Continent'?",
+        "answers": ["Australia", "South America", "Africa", "Antarctica"],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which country is the largest by land area?",
+        "answers": ["Russia", "Canada", "USA", "China"],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of these landmarks is located in Egypt?",
+        "answers": ["Eiffel Tower", "Great Pyramid of Giza", "Statue of Liberty", "Colosseum"],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which continent has the most countries?",
+        "answers": ["Asia", "Europe", "Africa", "South America"],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which country has the largest population?",
+        "answers": ["India", "USA", "Indonesia", "China"],
+        "correctAnswer": 3
+    },
+    {
+        "text": "The Eiffel Tower is located in which city?",
+        "answers": ["London", "Paris", "Berlin", "Rome"],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which continent is known for the Andes Mountains?",
+        "answers": ["Asia", "South America", "Africa", "Europe"],
+        "correctAnswer": 1
+    }
+]

@@ -1,12 +1,46 @@
+<link rel="stylesheet" href="/styles/quiz.css">
+
 <div class="content">
     <div class="progress"></div>
-    <div class="time"></div>
+    <!-- <div class="time"></div> -->
     <div class="questionArea">
-        <div class="question"></div>
+        <div class="question" id="question"></div>
     </div>
-    <div class="answer"></div>
-    <div class="answer"></div>
-    <div class="answer"></div>
-    <div class="answer"></div>
-    <div class="continue"></div>
+    <div class="answer">
+        <div class="selectArea">
+            <svg height="100%" width="auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50%" cy="50%" r="15%"></circle>
+            </svg>
+        </div>
+        <div class="answerText">Text</div>
+    </div>
+    <div class="answer correct">
+        <div class="selectArea">
+            <svg height="100%" width="auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50%" cy="50%" r="15%"></circle>
+            </svg>
+        </div>
+        <div class="answerText">Text</div>
+    </div>
+    <div class="answer incorrect">
+        <div class="selectArea">
+            <svg height="100%" width="auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50%" cy="50%" r="15%"></circle>
+            </svg>
+        </div>
+        <div class="answerText">Text</div>
+    </div>
+    <div class="answer selected">
+        <div class="selectArea">
+            <svg height="100%" width="auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50%" cy="50%" r="15%"></circle>
+            </svg>
+        </div>
+        <div class="answerText">Text</div>
+    </div>
+    <div class="nextContainer">
+        <div class="next" id="next">
+            Next
+        </div>
+    </div>
 </div>

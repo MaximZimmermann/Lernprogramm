@@ -1,0 +1,122 @@
+[
+    {
+        "text": "Which ancient civilization is credited with creating the first known written code of laws?",
+        "answers": [
+            "Babylonian",
+            "Egyptian",
+            "Greek",
+            "Roman"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who was the first President of the United States?",
+        "answers": [
+            "Thomas Jefferson",
+            "John Adams",
+            "George Washington",
+            "James Madison"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which country was the first to successfully launch a satellite into space?",
+        "answers": [
+            "United States",
+            "Russia",
+            "China",
+            "Germany"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which ancient civilization is known for its architectural achievements such as the Parthenon?",
+        "answers": [
+            "Roman",
+            "Egyptian",
+            "Greek",
+            "Persian"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which civilization is known for building the Pyramids of Giza?",
+        "answers": [
+            "Mesopotamian",
+            "Incan",
+            "Egyptian",
+            "Mayan"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Who was the British Prime Minister during the Battle of Britain in World War II?",
+        "answers": [
+            "Neville Chamberlain",
+            "Winston Churchill",
+            "Clement Attlee",
+            "Harold Wilson"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which ancient civilization is known for its development of democracy?",
+        "answers": [
+            "Roman",
+            "Greek",
+            "Persian",
+            "Carthaginian"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which country was the primary target of the D-Day invasion during World War II?",
+        "answers": [
+            "France",
+            "Germany",
+            "Belgium",
+            "Netherlands"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who was the ancient Egyptian queen known for her alliances with Julius Caesar and Mark Antony?",
+        "answers": [
+            "Cleopatra",
+            "Nefertiti",
+            "Hatshepsut",
+            "Ankhesenamun"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "In which ancient civilization was the concept of 'zero' believed to have been first developed?",
+        "answers": [
+            "Mayan",
+            "Greek",
+            "Egyptian",
+            "Roman"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who was the U.S. President during World War I?",
+        "answers": [
+            "Woodrow Wilson",
+            "Warren G. Harding",
+            "Calvin Coolidge",
+            "Herbert Hoover"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who was the last Tsar of Russia before the Russian Revolution?",
+        "answers": [
+            "Alexander II",
+            "Nicholas II",
+            "Peter the Great",
+            "Ivan the Terrible"
+        ],
+        "correctAnswer": 1
+    }
+]

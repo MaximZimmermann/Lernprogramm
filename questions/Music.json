@@ -1,0 +1,102 @@
+[
+    {
+        "text": "Which of the following notes has the highest pitch?",
+        "answers": [
+            "C4",
+            "D4",
+            "G4",
+            "E4"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Who composed the piece 'Symphony No. 9'?",
+        "answers": [
+            "Ludwig van Beethoven",
+            "Wolfgang Amadeus Mozart",
+            "Franz Schubert",
+            "Johann Sebastian Bach"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which music genre originated in the 1980s and is known for its electronic beats and synth-heavy sounds?",
+        "answers": [
+            "Techno",
+            "Reggae",
+            "Jazz",
+            "Blues"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What is the term for the key that determines the scale on which a piece of music is based?",
+        "answers": [
+            "Tempo",
+            "Rhythm",
+            "Key Signature",
+            "Time Signature"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which composer is known for the opera 'Carmen'?",
+        "answers": [
+            "Georges Bizet",
+            "Richard Wagner",
+            "Giuseppe Verdi",
+            "Giacomo Puccini"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What is the characteristic feature of Baroque music?",
+        "answers": [
+            "Complex Polyphony",
+            "Minimalism",
+            "Improvisation",
+            "Microtonality"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of these genres is primarily associated with the American South and has roots in African American culture?",
+        "answers": [
+            "Blues",
+            "Techno",
+            "Folk",
+            "Classical"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who is the composer of the piece 'The Four Seasons'?",
+        "answers": [
+            "Antonio Vivaldi",
+            "Johann Sebastian Bach",
+            "Franz Schubert",
+            "Wolfgang Amadeus Mozart"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What is the term for the time signature 4/4?",
+        "answers": [
+            "Common Time",
+            "Compound Time",
+            "Cut Time",
+            "Free Time"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which music genre is characterized by fast-paced guitar riffs and high energy?",
+        "answers": [
+            "Heavy Metal",
+            "Jazz",
+            "Folk",
+            "Classical"
+        ],
+        "correctAnswer": 0
+    }
+]

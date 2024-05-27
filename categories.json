@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Math",
+        "description": "topics: addition, subtraction, multiplication, and division",
+        "image": "/images/math.png",
+        "source": "internal"
+    },
+    {
+        "name": "Quiz Server",
+        "description": "topics: random questions from the quiz server",
+        "image": "/images/quiz_server.jpeg",
+        "source": "external"
+    },
+    {
+        "name": "Science",
+        "description": "topics: biology, chemistry, and physics",
+        "image": "/images/science.png",
+        "source": "internal"
+    },
+    {
+        "name": "History",
+        "description": "topics: ancient civilizations, world wars, and historical figures",
+        "image": "/images/history.png",
+        "source": "internal"
+    },
+    {
+        "name": "Computer Science",
+        "description": "topics: programming languages, algorithms, and data structures",
+        "image": "/images/computer_science.png",
+        "source": "internal"
+    },
+    {
+        "name": "Literature",
+        "description": "topics: classic novels, poetry, and literary analysis",
+        "image": "/images/literature.png",
+        "source": "internal"
+    },
+    {
+        "name": "Art",
+        "description": "topics: painting, sculpture, and art history",
+        "image": "/images/art.png",
+        "source": "internal"
+    },
+    {
+        "name": "Music",
+        "description": "topics: music theory, composers, and genres",
+        "image": "/images/music.png",
+        "source": "internal"
+    },
+    {
+        "name": "Geography",
+        "description": "topics: continents, countries, and landmarks",
+        "image": "/images/geography.png",
+        "source": "internal"
+    },
+    {
+        "name": "Sports",
+        "description": "topics: rules, players, and history of sports",
+        "image": "/images/sports.png",
+        "source": "internal"
+    }
+]

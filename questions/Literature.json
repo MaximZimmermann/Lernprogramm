@@ -1,0 +1,102 @@
+[
+    {
+        "text": "Which of these novels was written by Jane Austen?",
+        "answers": [
+            "Moby-Dick",
+            "Pride and Prejudice",
+            "The Great Gatsby",
+            "Crime and Punishment"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Who is the author of the epic poem 'Paradise Lost'?",
+        "answers": [
+            "John Milton",
+            "William Shakespeare",
+            "John Keats",
+            "Robert Frost"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of these literary devices is used to give human characteristics to non-human entities?",
+        "answers": [
+            "Metaphor",
+            "Simile",
+            "Personification",
+            "Oxymoron"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "What is the main theme of the novel 'To Kill a Mockingbird'?",
+        "answers": [
+            "Racial injustice",
+            "Romantic relationships",
+            "Historical events",
+            "Detective work"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of these poets is famous for 'The Raven'?",
+        "answers": [
+            "Edgar Allan Poe",
+            "Robert Frost",
+            "Emily Dickinson",
+            "Walt Whitman"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What literary technique is used in 'Animal Farm' to represent real-life events and figures?",
+        "answers": [
+            "Allegory",
+            "Irony",
+            "Satire",
+            "Symbolism"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of these characters is from 'Moby-Dick'?",
+        "answers": [
+            "Captain Ahab",
+            "Huckleberry Finn",
+            "Mr. Darcy",
+            "Elizabeth Bennet"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who wrote the novel '1984'?",
+        "answers": [
+            "George Orwell",
+            "Aldous Huxley",
+            "Ray Bradbury",
+            "Philip K. Dick"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of these plays was written by William Shakespeare?",
+        "answers": [
+            "Hamlet",
+            "Death of a Salesman",
+            "A Doll's House",
+            "The Crucible"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who is the protagonist of 'The Catcher in the Rye'?",
+        "answers": [
+            "Holden Caulfield",
+            "Jay Gatsby",
+            "Tom Sawyer",
+            "Scout Finch"
+        ],
+        "correctAnswer": 0
+    }
+]

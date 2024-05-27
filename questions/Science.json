@@ -1,0 +1,102 @@
+[
+    {
+        "text": "Which of the following is the basic unit of life?",
+        "answers": [
+            "Cell",
+            "Atom",
+            "Molecule",
+            "Organ"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What is the primary gas found in the Earth's atmosphere?",
+        "answers": [
+            "Oxygen",
+            "Nitrogen",
+            "Carbon Dioxide",
+            "Argon"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "What is the chemical symbol for sodium?",
+        "answers": [
+            "S",
+            "Na",
+            "Sn",
+            "Ni"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which of the following is a type of electromagnetic radiation?",
+        "answers": [
+            "Gamma Rays",
+            "Alpha Particles",
+            "Neutrons",
+            "Beta Particles"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What process do plants use to convert sunlight into energy?",
+        "answers": [
+            "Respiration",
+            "Photosynthesis",
+            "Transpiration",
+            "Fermentation"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which of the following is a noble gas?",
+        "answers": [
+            "Neon",
+            "Fluorine",
+            "Chlorine",
+            "Bromine"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What is the force that causes objects to fall toward the Earth?",
+        "answers": [
+            "Magnetism",
+            "Friction",
+            "Gravity",
+            "Inertia"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "Which organ in the human body is responsible for pumping blood?",
+        "answers": [
+            "Heart",
+            "Liver",
+            "Kidney",
+            "Lung"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What element has the atomic number 6?",
+        "answers": [
+            "Oxygen",
+            "Carbon",
+            "Hydrogen",
+            "Helium"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "What is the basic unit of electric current?",
+        "answers": [
+            "Volt",
+            "Ampere",
+            "Watt",
+            "Ohm"
+        ],
+        "correctAnswer": 1
+    }
+]

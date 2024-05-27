@@ -1,0 +1,102 @@
+[
+    {
+        "text": "Who painted the 'Mona Lisa'?",
+        "answers": [
+            "Vincent van Gogh",
+            "Leonardo da Vinci",
+            "Claude Monet",
+            "Pablo Picasso"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which sculptor created 'The Thinker'?",
+        "answers": [
+            "Auguste Rodin",
+            "Donatello",
+            "Michelangelo",
+            "Gian Lorenzo Bernini"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "In which period was Baroque art most prominent?",
+        "answers": [
+            "Renaissance",
+            "Middle Ages",
+            "Baroque",
+            "Modern Art"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "text": "What type of paint is known for its quick-drying properties and versatility?",
+        "answers": [
+            "Acrylic",
+            "Oil",
+            "Watercolor",
+            "Tempera"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Which of these is an example of a Classical sculpture?",
+        "answers": [
+            "Statue of Zeus at Olympia",
+            "Venus de Milo",
+            "The Winged Victory of Samothrace",
+            "Statue of David"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Who is considered the founder of the Cubist movement?",
+        "answers": [
+            "Pablo Picasso",
+            "Georges Braque",
+            "Juan Gris",
+            "Paul Cézanne"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "text": "Which artist is known for his drip painting technique?",
+        "answers": [
+            "Jackson Pollock",
+            "Andy Warhol",
+            "Roy Lichtenstein",
+            "Mark Rothko"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What material is commonly used in bronze sculpture?",
+        "answers": [
+            "Bronze",
+            "Marble",
+            "Stone",
+            "Steel"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "Who painted 'The Persistence of Memory'?",
+        "answers": [
+            "Salvador Dalí",
+            "René Magritte",
+            "Joan Miró",
+            "Paul Gauguin"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "text": "What is a common feature of Impressionist paintings?",
+        "answers": [
+            "Visible brush strokes",
+            "Smooth textures",
+            "Precise outlines",
+            "Dark color palette"
+        ],
+        "correctAnswer": 0
+    }
+]
