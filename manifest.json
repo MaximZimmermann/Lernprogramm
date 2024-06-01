@@ -1,0 +1,8 @@
+{
+    "name": "Brain Bites",
+    "short_name": "Brain Bites",
+    "start_url": "/mvp/app.html",
+    "display": "standalone",
+    "background_color": "#1A2330",
+    "description": "Brain Bites is a simple and fun way to answer random questions."
+}

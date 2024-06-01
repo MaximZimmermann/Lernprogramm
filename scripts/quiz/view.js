@@ -22,6 +22,19 @@ export class QuizView {
     }
 
     /**
+     * Renders the quiz by setting the question and answers
+     * @param {Question} question - The question object containing the text and answers
+     */
+    renderQuiz(question) {
+        this.setQuestion(question.text);
+        this.setAnswers(question.answers);
+        this.setButtonState("skip");
+        if (question.type === "math") {
+            this.setMathQuestion(question.text);
+        }
+    }
+
+    /**
      * Sets the question text
      * @param {String} questionText - The question to set
      */
@@ -30,15 +43,6 @@ export class QuizView {
         questionArea.textContent = questionText;
     }
 
-    /**
-     * Renders the quiz by setting the question and answers
-     * @param {Question} question - The question object containing the text and answers
-     */
-    renderQuiz(question) {
-        this.setQuestion(question.text);
-        this.setAnswers(question.answers);
-        this.setButtonState("skip");
-    }
 
     /**
      * Sets the answers for the quiz
@@ -63,6 +67,23 @@ export class QuizView {
         //         element.getElementsByClassName("answerText")[0].textContent = answers[index];
         //         this.changeAnswerState(element, "clickable", index);
         //     });
+    }
+
+    /**
+     * Sets the math question by rendering the given text using KaTeX.
+     * @param {string} text - The math question text to be rendered.
+     * @returns {Promise<void>} - A promise that resolves when the rendering is complete.
+     */
+    async setMathQuestion(text) {
+        if (!window.katex) {
+            // @ts-ignore
+            const katex = await import('/scripts/katex/katex.mjs');
+            window.katex = katex;
+        }
+        // @ts-ignore
+        katex.render(text, document.getElementById("question"), {
+            throwOnError: false
+        });
     }
 
     /**
@@ -131,6 +152,7 @@ export class QuizView {
     answerSelected() {
         // @ts-ignore
         const answerIndex = parseInt(this.dataset.index);
+        // @ts-ignore
         const isCorrect = quizView.controller.checkAnswer(answerIndex);
 
         const answerElements = quizView.getAnswers();

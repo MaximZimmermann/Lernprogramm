@@ -7,7 +7,7 @@
     },
     {
         "name": "Quiz Server",
-        "description": "topics: random questions from the quiz server",
+        "description": "requires: HTW VPN, \ntopics: random questions from the quiz server",
         "image": "/images/quiz_server.jpeg",
         "source": "external"
     },

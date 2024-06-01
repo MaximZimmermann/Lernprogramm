@@ -1,14 +1,56 @@
+// /**
+//  * Represents a question with text, answers, and a correct answer
+//  * @typedef {import('./quizEngine.js').QuizEngineResponse} QuizEngineResponse
+//  */
+import { quizEngine } from './quizEngine.js';
+
 /**
  * Represents a question with text, answers, and a correct answer
  */
 export class Question {
-    constructor(text, answers, correctAnswer, wasAnswered = false, wasCorrect = null) {
+    /**
+     * Creates a new Question
+     * @constructor
+     * @param {string} text - The text of the question
+     * @param {Array<string>} answers - An array of possible answers for the question
+     * @param {number} correctAnswer - The index of the correct answer in the answers array
+     * @param {string} [type = "text"] - The type of the question (text, math, music)
+     * @param {boolean} [wasAnswered = false] - True if the question was answered, false otherwise
+     * @param {boolean} [wasCorrect = null] - True if the answer was correct, false if it was wrong, null if it was not answered
+     */
+    constructor(text, answers, correctAnswer, type = "text", wasAnswered = false, wasCorrect = null) {
         this.text = text;
         this.answers = answers;
         this.correctAnswer = correctAnswer;
         this.wasAnswered = wasAnswered;
         this.wasCorrect = wasCorrect;
+        this.type = type;
     }
+
+    /**
+     * @type {string} The text of the question
+     */
+    text;
+    /**
+     * @type {Array<string>} The possible answers for the question
+     */
+    answers;
+    /**
+     * @type {number} The index of the correct answer in the answers array
+     */
+    correctAnswer;
+    /**
+     * @type {boolean} True if the question was answered, false otherwise
+     */
+    wasAnswered
+    /**
+     * @type {boolean} True if the answer was correct, false if it was wrong, null if it was not answered
+     */
+    wasCorrect
+    /**
+     * @type {string} The type of the question (text, math, music)
+     */
+    type
 
     /**
      * Retrieves the question text
@@ -52,18 +94,9 @@ export class Question {
         return this.correctAnswer === answerNr;
     }
 
-    /**
-     * @type {string} The text of the question
-     */
-    text;
-    /**
-     * @type {Array<string>} The possible answers for the question
-     */
-    answers;
-    /**
-     * @type {number} The index of the correct answer in the answers array
-     */
-    correctAnswer;
+    // getType() {
+    //     return this.type;
+    // }
 }
 
 /**
@@ -113,14 +146,15 @@ export class Category {
      * @param {string} text - The text of the question
      * @param {string[]} answers - An array of possible answers for the question
      * @param {number} correctAnswer - The index of the correct answer in the answers array
+     * @param {string} type - The type of the question (text, math, music)
      */
-    addQuestion(text, answers, correctAnswer) {
+    addQuestion(text, answers, correctAnswer, type) {
         // randomize the order of the answers
         const correctAnswerText = answers[correctAnswer];
         answers = answers.sort(() => Math.random() - 0.5);
         correctAnswer = answers.indexOf(correctAnswerText);
 
-        const question = new Question(text, answers, correctAnswer);
+        const question = new Question(text, answers, correctAnswer, type);
         this.questions.push(question);
     }
 
@@ -176,11 +210,21 @@ export class Category {
             const response = await fetch(`/questions/${this.name}.json`);
             const questionsJson = await response.json();
             questionsJson.forEach(question => {
-                this.addQuestion(question.text, question.answers, question.correctAnswer);
+                this.addQuestion(question.text, question.answers, question.correctAnswer, question.type);
             });
         } else if (this.source === "external") {
-            
+            console.log(this.questions);
         }
+    }
+
+    /**
+     * Adds questions to the quiz engine.
+     * @param {Array} questions - An array of question objects.
+     */
+    addQuizEngineQuestion(questions) {
+        questions.forEach(question => {
+            // this.addQuestion(question.text, question.options, 0);
+        });
     }
 
     /**
@@ -228,23 +272,6 @@ export class Model {
         }
     }
 
-    // /**
-    //  * Fetches questions for a given category name from an API
-    //  * @param {string} categoryName - The name of the category
-    //  * @returns {Promise<void>} A promise that resolves when the questions are fetched and added to the category
-    //  */
-    // async fetchQuestions(categoryName) {
-    //     const response = await fetch(`https://api.example.com/questions?category=${categoryName}`);
-    //     const questions = await response.json();
-
-    //     const category = this.categories.find(category => category.name === categoryName);
-    //     if (category) {
-    //         questions.forEach(question => {
-    //             category.addQuestion(question.text, question.answers, question.correctAnswer);
-    //         });
-    //     }
-    // }
-
     /**
      * Fetches categories from a JSON file and populates the categories array.
      * @returns {Promise<void>} A promise that resolves when the categories are fetched and populated.
@@ -276,9 +303,12 @@ export class Model {
      * @param {string} [source = "internal"] - The source of the category
      */
     // addCategory(name, description, image = "/images/placeholder.png", source = "internal") {
-    addCategory(name, description, image = "https://placehold.co/400", source = "internal") {
+    async addCategory(name, description, image = "https://placehold.co/400", source = "internal") {
         const category = new Category(name, description, image, source);
         this.categories.push(category);
+        if (category.source === "external") {
+            category.questions = await quizEngine.appendQuestions(category.questions);
+        }
     }
 
     /**
@@ -327,6 +357,9 @@ export let model;
 if (!model) {
     model = new Model();
     model.updateCategories();
+
+    // const connection = quizEngine.getAllQuestions();
+    // console.log('connection: ', connection);
 
     // setInterval(() => {
     //     console.log(model.activeCategory.questions);
