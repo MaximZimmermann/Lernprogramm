@@ -48,7 +48,7 @@ export class CategoryView {
      */
     async renderCategory(categoryName, categoryDescription, categoryImage) {
         if (!this.categoryHTMLText) {
-            const categoryElement = await fetch(`/partials/categoryElement.html`);
+            const categoryElement = await fetch('../partials/categoryElement.html');
             this.categoryHTMLText = await categoryElement.text();
         }
         let thisCategoryText = this.categoryHTMLText;

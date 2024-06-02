@@ -48,17 +48,17 @@ function setActiveElement(id) {
 
 /**
  * Loads the page with the given id
- * @param {String} id 
+ * @param {String} id
  */
 async function loadPage(id) {
-    const page = await fetch(`/partials/${id}.html`);
+    const page = await fetch(`../partials/${id}.html`);
     page.text().then(text => document.getElementById("main").innerHTML = text);
     // loading the page and running scripts at the same time can cause issues because the script might run before the page is loaded
     let observer = new MutationObserver(async (mutations, observer) => {
         let div_to_observe = document.querySelector(".content");
         if (div_to_observe) {
             observer.disconnect();
-            const { init, exit } = await import(`/scripts/${id}/MVC.js`);
+            const { init, exit } = await import(`../scripts/${id}/MVC.js`);
             init();
         }
     });

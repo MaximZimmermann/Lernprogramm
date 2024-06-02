@@ -77,7 +77,8 @@ export class QuizView {
     async setMathQuestion(text) {
         if (!window.katex) {
             // @ts-ignore
-            const katex = await import('/scripts/katex/katex.mjs');
+            const katex = await import('../../scripts/katex/katex.mjs');
+            // @ts-ignore
             window.katex = katex;
         }
         // @ts-ignore

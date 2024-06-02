@@ -207,7 +207,7 @@ export class Category {
      */
     async fetchQuestions() {
         if (this.source === "internal") {
-            const response = await fetch(`/questions/${this.name}.json`);
+            const response = await fetch(`../questions/${this.name}.json`);
             const questionsJson = await response.json();
             questionsJson.forEach(question => {
                 this.addQuestion(question.text, question.answers, question.correctAnswer, question.type);
@@ -287,7 +287,7 @@ export class Model {
      * @returns {Promise<void>} A promise that resolves when the categories are updated
      */
     async forceUpdateCategories() {
-        const response = await fetch(`/categories.json`);
+        const response = await fetch(`../categories.json`);
         const categoriesJson = await response.json();
         this.emptyCategories();
         categoriesJson.forEach(category => {

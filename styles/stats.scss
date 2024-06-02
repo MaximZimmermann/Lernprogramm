@@ -1,0 +1,13 @@
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light-text);
+    background: var(--gradient-bg);
+
+    font-size: 2rem;
+    font-family: "Inter";
+    font-weight: 600;
+}

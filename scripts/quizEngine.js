@@ -226,7 +226,8 @@ class QuizEngine {
         let page = 0;
         const quizEngineResponse = await this.getQuizEnginePage(page);
         if (!quizEngineResponse) {
-            console.error("Unable to reach quiz engine, make sure you are connected to the HTW VPN");
+            console.error("Unable to reach quiz engine, make sure you are connected to the HTW VPN and the server is reachable");
+            alert("Unable to reach quiz engine, make sure you are connected to the HTW VPN and the server is reachable");
             return null;
         }
         let response;
