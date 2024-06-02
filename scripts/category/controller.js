@@ -1,14 +1,14 @@
 import * as nav from "../nav.js";
 
 /**
- * Controller for managing categories.
+ * Controller for managing categories
  * @class
  */
 export class CategoryController {
     /**
-     * Creates a new instance of CategoryController.
-     * @param {import("../model.js").Model} model - The model instance.
-     * @param {import("./view.js").CategoryView} view - The view instance.
+     * Creates a new instance of CategoryController
+     * @param {import("../model.js").Model} model - The model instance
+     * @param {import("./view.js").CategoryView} view - The view instance
      */
     constructor(model, view) {
         this.model = model;
@@ -20,7 +20,7 @@ export class CategoryController {
 
     /**
      * Selects a category.
-     * @param {string} categoryName - The name of the category to select.
+     * @param {string} categoryName - The name of the category to select
      */
     async selectCategory(categoryName) {
         await this.model.selectCategory(categoryName);
@@ -28,8 +28,9 @@ export class CategoryController {
     }
 
     /**
-     * Updates the categories.
-     * @async
+     * Updates the categories by calling the model's updateCategories method
+     * and then updates the view with the updated categories
+     * @returns {Promise<void>} A promise that resolves when the categories are updated
      */
     async updateCategories() {
         await this.model.updateCategories();

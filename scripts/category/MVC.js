@@ -10,12 +10,3 @@ export function init() {
     const view = new CategoryView();
     const controller = new CategoryController(modelObject, view);
 }
-
-/**
- * Removes the category controller and view from the window object
- */
-export function exit() {
-    // TODO: Implement exit function
-    // delete window.categoryController;
-    // delete window.categoryView;
-}

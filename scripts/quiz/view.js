@@ -58,15 +58,6 @@ export class QuizView {
             element.getElementsByClassName("answerText")[0].textContent = answers[i];
             this.changeAnswerState(element, "clickable", i);
         }
-        // [...document.getElementsByClassName("answer")].forEach(
-        //     /**
-        //      * @param {HTMLElement} element 
-        //      * @param {Number} index 
-        //      */
-        //     (element, index) => {
-        //         element.getElementsByClassName("answerText")[0].textContent = answers[index];
-        //         this.changeAnswerState(element, "clickable", index);
-        //     });
     }
 
     /**
@@ -126,7 +117,7 @@ export class QuizView {
     }
 
     /**
-     * 
+     * Sets the state of the button
      * @param {string} state - The state to set the button to. Possible values are "skip", "next" and "finish"
      */
     setButtonState(state) {
@@ -143,6 +134,9 @@ export class QuizView {
         }
     }
 
+    /**
+     * Moves to the next question in the quiz.
+     */
     nextQuestion() {
         quizView.controller.nextQuestion();
     }

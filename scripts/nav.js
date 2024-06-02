@@ -1,5 +1,3 @@
-import { Model } from "./model.js";
-
 /**
  * Represents a collection of navigation buttons
  * @type {HTMLCollectionOf<Element>}
@@ -22,7 +20,6 @@ if (!nav) {
     }
     setActivePage(defaultPage);
 }
-
 
 /**
  * Sets the active page to the one with the given id
@@ -63,6 +60,4 @@ async function loadPage(id) {
         }
     });
     observer.observe(document.getElementById("main"), { childList: true, subtree: true });
-
-    // window.exit = exit;
 }

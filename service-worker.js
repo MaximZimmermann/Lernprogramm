@@ -57,17 +57,15 @@ self.addEventListener('install', event => event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(CACHE_ASSETS))
 ));
 
-self.addEventListener('fetch', event => { // Altered by ChatGPT so that live page is served unless offline
+self.addEventListener('fetch', event => {
     event.respondWith(
         fetch(event.request).then(response => {
-            // If the response is valid, clone it and store it in the cache.
             const responseClone = response.clone();
             caches.open(CACHE_NAME).then(cache => {
                 cache.put(event.request, responseClone);
             });
             return response;
         }).catch(() => {
-            // If the network request fails, try to get the response from the cache.
             return caches.match(event.request).then(cachedResponse => {
                 return cachedResponse || fetch(event.request);
             });

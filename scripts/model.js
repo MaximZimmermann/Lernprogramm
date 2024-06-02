@@ -1,7 +1,3 @@
-// /**
-//  * Represents a question with text, answers, and a correct answer
-//  * @typedef {import('./quizEngine.js').QuizEngineResponse} QuizEngineResponse
-//  */
 import { quizEngine } from './quizEngine.js';
 
 /**
@@ -93,10 +89,6 @@ export class Question {
     isCorrectAnswerNr(answerNr) {
         return this.correctAnswer === answerNr;
     }
-
-    // getType() {
-    //     return this.type;
-    // }
 }
 
 /**
@@ -357,11 +349,4 @@ export let model;
 if (!model) {
     model = new Model();
     model.updateCategories();
-
-    // const connection = quizEngine.getAllQuestions();
-    // console.log('connection: ', connection);
-
-    // setInterval(() => {
-    //     console.log(model.activeCategory.questions);
-    // }, 5000);
 }

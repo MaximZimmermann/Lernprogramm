@@ -79,6 +79,10 @@ class QuizEngine {
      */
     password;
 
+    /**
+     * Tests the connection to the quiz engine API.
+     * @returns {Promise<boolean>} A promise that resolves to true if the connection is successful, or false otherwise.
+     */
     async testConnection() {
         try {
             const response = await fetch(`${this.url}:${this.port}/api/quizzes?page=1`, {
@@ -147,7 +151,6 @@ class QuizEngine {
 
     /**
      * Retrieves the index of the correct answer for a given question.
-     *
      * @param {QuizEngineQuestion} question - The question object.
      * @returns {Promise<number>} The index of the correct answer.
      */
@@ -157,7 +160,6 @@ class QuizEngine {
         for (let i = 0; i < results.length; i++) {
             const result = results[i];
             if (result?.success === true) {
-                // console.log("question ID: ", question.id, i);
                 return i;
             }
         }

@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/*Formatierung für den body
-Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
 @font-face {
   font-family: Inter;
   src: url(../fonts/Inter-VariableFont_slnt,wght.ttf);

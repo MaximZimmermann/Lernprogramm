@@ -1,9 +1,6 @@
-/*Formatierung für den body
-Hintergrundfarbe, Schriftfarbe und Schriftfamilie*/
-// @import url(/fonts/Inter-SemiBold.ttf);
+
 @font-face {
     font-family: Inter;
-    // src: url(/fonts/Inter-SemiBold.ttf);
     src: url(../fonts/Inter-VariableFont_slnt,wght.ttf);
 }
 
@@ -92,7 +89,6 @@ main {
     max-width: var(--content-width);
     overflow: hidden;
     border-radius: var(--border-raduis);
-    // background: LightYellow;
 }
 
 nav {
